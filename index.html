@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/boostrap.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
-    <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Survey</title>
-  </head>
-  <body>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <!--CONTAINER-->
+  <div class="container">
+    <!--JUMBOTRON-->
+    <div class="jumbotron">
+      <h1>What are your favorites?</h1>
+    </div>
+    <!--/JUMBOTRON-->
 
-  </body>
+    <form>
+      <div class="form-group">
+        <label for="firstName"><h2>Your First Name</h2></label>
+        <input id="first-name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="lastName"><h2>Your Last Name</h2></label>
+        <input id="last-name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="born"><h2>When is your birthday?</h2></label>
+        <input id="born" class="form-control" type="date">
+      </div>
+
+      <div class="form-group">
+        <h2>What is your favorite season?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="winter">
+            Winter
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="spring">
+            Spring
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="summer">
+            Summer
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="fall">
+            Fall
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h2>What is your favorite ice cream flavor?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="icecream" value="chocolate">
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="strawberry">
+            Strawberry
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="mint">
+            Mint
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="color"><h2>Set the background to your favorite color</h2></label>
+        <input id="color" class="form-control" type="color">
+      </div>
+
+      <div class="form-group">
+        <h2>What is your favorite type of food?</h2>
+        <select class="form-control" id="fav-food">
+          <option>Mexican</option>
+          <option>Indian</option>
+          <option>Thai</option>
+          <option>Italian</option>
+          <option>Chinese</option>
+          <option>French Cuisine</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h2>What is your favorite type of animal?</h2>
+        <select class="form-control" id="fav-animal">
+          <option>Dogs</option>
+          <option>Cats</option>
+          <option>Birds</option>
+          <option>Horses</option>
+          <option>Lizards</option>
+          <option>Fish</option>
+        </select>
+      </div>
+    </form>
+
+  </div>
+  <!--/CONTAINER-->
+</body>
 </html>
