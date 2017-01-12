@@ -8,8 +8,8 @@ $(document).ready(function() {
     var season = $("input:radio[name=season]:checked").val();
     var icecream = $("input:radio[name=icecream]:checked").val();
     var favoriteColor = $("input#color").val();
-    var favoriteFood = $("input#fav-food").val();
-    var favoriteAnimal = $("input#fav-animal").val();
+    var favoriteFood = $("select#fav-food").val();
+    var favoriteAnimal = $("select#fav-animal").val();
 
     $("#output1").text(firstName);
     $("#output2").text(lastName);
